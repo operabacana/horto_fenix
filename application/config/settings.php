@@ -1,8 +1,8 @@
 <?php
 
 //*****Configurações gerais
-$config["title_site"] = "Titulo do site";
-$config["nome_site"] = "Nome Do Site";
+$config["title_site"] = "Fênix - Móveis e Paisagismo";
+$config["nome_site"] = "Horto Fênix";
 
 //*****Configurações de diretórios
 $config["pasta_plugins"] = "plugins";

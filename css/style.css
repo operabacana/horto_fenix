@@ -1,7 +1,8 @@
-/*=====================================RESET (JÁ É PADRÃO) =======================================*/
-body { margin:0px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; background:#fff; color:#000; text-align:center; overflow-x:hidden;}
+ /*=====================================RESET (JÁ É PADRÃO) =======================================*/
+body { margin:0px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; background:url(../imagens/textura.jpg); color:#000; text-align:center; overflow-x:hidden;}
+::selection, ::-moz-selection, ::-webkit-selection{background-color:#50321d;}
 img {border:none;}
-a {color:#000; font-size:1em;}
+a {color:#000; font-size:1em; text-decoration:none; cursor:pointer;}
 a img {border:none; padding:0; margin:0;}
 form {margin:0px;}
 ul, li, ol {list-style-type:none; margin:0; padding:0;}
@@ -11,3 +12,36 @@ textarea{height:56px;}
 input[type=submit], input[type=radio], input[type=checkbox], select {cursor:pointer;}
 h1 {font-size:18px;}
 .error{background-color:#FFB7B7;}
+.sprite{background:url(../imagens/sprite.png) no-repeat 0 0;}
+
+/************************************* HEADER *************************************/
+header{width:100%; height:96px;}
+header article{width:100%; height:39px; background:#402817; box-shadow:0 -3px 13px -2px #000 inset;}
+#back_menu_header{width:967px; height:100%; margin:auto; position:relative;}
+#menu_header{float:right; margin:12px 0 0 0; }
+#menu_header li{float:left; margin:0 18px;}
+.header_menu{color:#a3785a; font-size:16px; font-family:;}
+.header_menu:hover{text-decoration:underline;}
+#logo{display:block; width:182px; height:174px; position:absolute; z-index:999; left:0; top:0; box-shadow:0 0px 13px -2px #000;}
+#back_nav{width:100%; height:57px; background:#50321d;}
+nav{width:967px; height:100%; margin:auto;}
+nav ul, nav ul li{float:left; margin:8px 0 0 223px;}
+nav ul li{margin:0 9px;}
+.link_menu{display:block; color:#fff; font-size:16px; height:auto; float:left;}
+.icones_menu{width:33px; height:33px; float:left; background-position:-162px -3px;}
+.texto_link{float:left; margin:8px 0 0 8px;}
+.link_menu:hover .paisagismo{background-position:-162px -43px; color:#ff9657;}
+.jardinagem{background-position:-122px -3px;}
+.link_menu:hover .jardinagem{background-position:-122px -43px; color:#d0ca2e;}
+.plantas{background-position:-82px -3px;}
+.link_menu:hover .plantas{background-position:-82px -43px; color:#63bb33;}
+.moveis{background-position:-42px -3px;}
+.link_menu:hover .moveis{background-position:-42px -43px; color:#eb3d17;}
+.vasos{background-position:-2px -3px;}
+.link_menu:hover .vasos{background-position:-2px -43px; color:#f38e20;}
+/************************************* HEADER *************************************/
+
+/************************************* FOOTER *************************************/
+footer{width:967px; height:120px; margin:auto;}
+/************************************* FOOTER *************************************/
+

@@ -1,12 +1,12 @@
 <footer>
 
+
+
 </footer>
 
-<?php 
-
+<?php
 	$jsFiles = $this -> lang -> line('js_file');
 	$jsMain = base_url($jsFiles['main']) ;
-
 ?>
 <script language="javascript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" ></script>
 <script language="javascript" type="text/javascript" src="https://raw.github.com/LeaVerou/prefixfree/gh-pages/plugins/prefixfree.dynamic-dom.min.js" ></script>

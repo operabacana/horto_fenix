@@ -12,7 +12,6 @@ class Inicial extends CI_Controller{
 		
 		
 		$this->load->view('header');
-		$this->load->view('topo');
 		$this->load->view('inicial');
 		$this->load->view('footer');
 	
