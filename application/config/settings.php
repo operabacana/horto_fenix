@@ -1,25 +1,25 @@
 <?php
 
-//*****Configurações gerais
-$config["title_site"] = "Fênix - Móveis e Paisagismo";
-$config["nome_site"] = "Horto Fênix";
+//*****ConfiguraÃ§Ãµes gerais
+$config["title_site"] = "FÃªnix - MÃ³veis e Paisagismo";
+$config["nome_site"] = "Horto FÃªnix";
 
-//*****Configurações de diretórios
+//*****ConfiguraÃ§Ãµes de diretÃ³rios
 $config["pasta_plugins"] = "plugins";
 $config["pasta_curriculos"] = "curriculos";
 
-//*****Configurações de e-mail
+//*****ConfiguraÃ§Ãµes de e-mail
 $config["email_contato"] = "email@dominioCliente.com.br";
 $config["email_contato_extra"] = "cliente@dominioCliente.com.br";
 $config["email_suporte"] = "";
 $config["email_opera_no_site"] = "opera@dominio.com.br";
 $config["email_site_na_opera"] = "cliente@operabacana.com.br";
 
-//*****Configurações de ftp
+//*****ConfiguraÃ§Ãµes de ftp
 $config["ftp_hostname"] = "127.0.0.1";
 $config["ftp_username"] = "admin";
 $config["ftp_password"] = "123456";
 $config["ftp_path"] = "/www/";
 
-//*****Configurações de segurança
+//*****ConfiguraÃ§Ãµes de seguranÃ§a
 $config["name_session_member"] = "_restrict";
