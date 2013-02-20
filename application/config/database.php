@@ -41,11 +41,11 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = '192.168.0.50:3306';
-$db['default']['username'] = 'opera';
+$db['default']['hostname'] = 'localhost';
+$db['default']['username'] = 'root';
 $db['default']['password'] = '';
-$db['default']['database'] = 'horto_fenix';
-$db['default']['dbdriver'] = 'mysql';
+$db['default']['database'] = 'horto';
+$db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;
