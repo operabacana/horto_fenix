@@ -21,3 +21,43 @@
   <script src="js/modernizr-2.5.3.min.js"></script>
 </head>
 <body>
+
+<header>
+
+    <article>
+
+        <div id="back_menu_header">
+
+            <ul id="menu_header">
+
+                <li><a href="<?php echo site_url(); ?>" class="header_menu">Inicial</a></li>
+                <li><a href="<?php echo site_url(); ?>quem_somos" class="header_menu">Quem Somos</a></li>
+                <li><a href="<?php echo site_url(); ?>contato" class="header_menu">Contato</a></li>
+
+            </ul>
+
+            <a href="<?php echo site_url(); ?>" id="logo"><img src="<?php echo site_url(); ?>imagens/logo.png" /></a>
+
+        </div>
+
+    </article>
+
+    <div id="back_nav">
+
+        <nav>
+
+            <ul>
+
+                <li><a href="<?php echo site_url(); ?>paisagismo" class="link_menu link_paisagismo"><div class="sprite icones_menu paisagismo"></div> <p class="texto_link paisagismo">Paisagismo</p></a></li>
+                <li><a href="<?php echo site_url(); ?>jardinagem" class="link_menu link_jardinagem"><div class="sprite icones_menu jardinagem"></div> <p class="texto_link jardinagem">Jardinagem</p></a></li>
+                <li><a href="<?php echo site_url(); ?>plantas" class="link_menu link_plantas"><div class="sprite icones_menu plantas"></div> <p class="texto_link plantas">Plantas</p></a></li>
+                <li><a href="<?php echo site_url(); ?>moveis" class="link_menu link_moveis"><div class="sprite icones_menu moveis"></div> <p class="texto_link moveis">Móveis</p></a></li>
+                <li><a href="<?php echo site_url(); ?>vasos" class="link_menu link_vasos"><div class="sprite icones_menu vasos"></div> <p class="texto_link vasos">Vasos</p></a></li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
