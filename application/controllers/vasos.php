@@ -1,6 +1,6 @@
 <?php
 
-class Quem_somos extends CI_controller{
+class Vasos extends CI_controller{
 
     public function __construct(){
 
@@ -11,7 +11,7 @@ class Quem_somos extends CI_controller{
     public function index(){
 
 		$this->load->view('header');
-		$this->load->view('quem_somos');
+		$this->load->view('vasos');
 		$this->load->view('footer');
 
     }
