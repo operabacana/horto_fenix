@@ -10,8 +10,11 @@ class Paisagismo extends CI_controller{
 
     public function index(){
 
+        $sel_paisagismos = $this->db->query("SELECT * FROM paisagismo");
+        $paisagismos = $sel_paisagismos->result();
+
 		$this->load->view('header');
-		$this->load->view('paisagismo');
+		$this->load->view('paisagismo', array("paisagismos"=>$paisagismos));
 		$this->load->view('footer');
 
     }

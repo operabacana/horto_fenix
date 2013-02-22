@@ -1,0 +1,157 @@
+/*
+Estilo criado por: Ópera Propaganda
+Media: Screen
+Website: www.operabacana.com.br
+Todos os direitos reservados
+
+Cores:
+Texto e bordas: #666666;
+Fundos: #EEE;
+*/
+
+
+
+
+/* -------------------------------- CONFIGURAÇÕES GLOBAIS ---------------------------------------- */
+* {margin:0px; padding:0px; color:#666666; font-size:12px; font-family:Arial, Helvetica, sans-serif;}
+body {overflow-x: hidden !important;}
+li {list-style-type:none;}
+::-moz-selection {background:#666; color:#fff;}
+::selection {background:#666; color:#fff;}
+#livesearch {background:#FFF; position:absolute; padding:10px;}
+#livesearch a {text-decoration:none;}
+#livesearch a:hover {color:#EEE; background:#999;}
+
+#content {margin:5px; text-align:center; padding-top:10px;}
+#article {padding-left:190px; margin:5px;}
+#article h2 {font-size:18px; color:#CCC; text-align:left;}
+#article h2 span {font-size:22px; color:#999;}
+
+/* -------------------------------- USER BAR ---------------------------------------- */
+#user_info { display:block; bottom:0px; right:0px; position:fixed; width:100%; height:20px; background:#FFF; border-top:1px dashed #666;  border-left:1px dashed #666; padding:3px;}
+#user_info a {text-decoration:none;}
+#user_info a:hover {color:#FFF; background:#999;}
+
+/* --------BOXES--------- */
+#article #informations {}
+#article #informations .box {text-align:center; vertical-align:middle; width:175px; height:40px; background:#F5F5F5; float:left; padding:5px; margin-right:5px; margin-bottom:5px; border:1px dashed #CCC;  background-image:url(../_images/gradient.png); background-repeat:repeat-x;}
+#article #informations .box_alert {text-align:center; vertical-align:middle; width:175px; height:40px; float:left; padding:5px; margin-right:5px; margin-bottom:5px;  border:1px dashed #FF0; background-color:#FFC;  background-image:url(../_images/gradient.png); background-repeat:repeat-x;}
+#article #informations .box span, #article #informations .box_alert span {font-weight:bold; font-size:13px;}
+
+#article .boxes { width:680px;}
+#article .boxes .box {width:200px; border:1px solid #CCC; text-align:center; float:left; padding:7px; margin-left:5px; margin-right:5px; font-weight:bold;}
+#article .boxes .box .price {font-size:27px;}
+#article .boxes .border {border:1px solid #FFF; width:140px; margin:5px; padding:5px; font-weight:bold; text-align:center; color:#FFF; font-size:15px; float:left;  background-image:url(../_images/gradient.png); background-repeat:repeat-x;}
+
+/* --------TABELAS--------- */
+#article table {text-align:left; width:100%;}
+#article table a img {border:none;}
+#article table.one {background:#F5F5F5; margin:2px 0px;}
+#article table.two {background:#EEE; margin:2px 0px;}
+#article td {padding:5px; vertical-align:top;}
+#article td.title {color:#999; font-size:22px; font-weight:bold;}
+#article td.title span {color:#CCC; font-size:18px; font-weight:bold;}
+#article td.info {width:35%; font-size:14px; color:#999; font-weight:bold;}
+#article td.info sup, #article td.info sub {color:#999;}
+#article td.info span {font-weight:normal; font-size:11px; color:#999;}
+#article td.info span strong {font-size:12px; color:#999; font-weight:bold;}
+#article td.images {width:300px;}
+#article td.images img {padding:0px 5px;}
+#article td a {text-decoration:none;}
+#article td a:hover {color:#EEE; background:#999;}
+#article tr td table tr td {background-image:url(../_images/gradient.png); background-repeat:repeat-x;}
+
+/* --------CORES--------- */
+/* Hover */
+#article tr.hover {background:#FFF; border-bottom:1px solid #CCC;}
+#article tr.hover td {border-bottom:1px dashed #CCC;}
+#article tr.hover:hover {background-color:#E4E4E4; background-image:url(../_images/gradient.png); background-repeat:repeat-x;}
+/* Warning */
+#article tr.hover_warning {background:#FFFFE6; border-bottom:1px dashed #CCC;}
+#article tr.hover_warning td {border-bottom:1px dashed #CCC;}
+#article tr.hover_warning:hover {background-color:#FFC;  background-image:url(../_images/gradient.png); background-repeat:repeat-x;}
+/* Alert */
+#article tr.hover_alert {background:#FFDFDF; border-bottom:1px dashed #CCC;}
+#article tr.hover_alert td {border-bottom:1px dashed #CCC;}
+#article tr.hover_alert:hover {background-color:#FFCACA;  background-image:url(../_images/gradient.png); background-repeat:repeat-x;}
+/* pedido1 */
+#article tr.hover_pedido1 {background:#FFFFE6; border-bottom:1px dashed #CCC;}
+#article tr.hover_pedido1 td {border-bottom:1px dashed #CCC;}
+#article tr.hover_pedido1:hover {background:#FFC;background-image:url(../_images/gradient.png); background-repeat:repeat-x;}
+/* pedido2 */
+#article tr.hover_pedido2 {background:#d2edf3; border-bottom:1px dashed #CCC;}
+#article tr.hover_pedido2 td {border-bottom:1px dashed #CCC;}
+#article tr.hover_pedido2:hover {background:#A8DDE8;background-image:url(../_images/gradient.png); background-repeat:repeat-x;}
+/* pedido3 */
+#article tr.hover_pedido3 {background:#f1e5f7; border-bottom:1px dashed #CCC;}
+#article tr.hover_pedido3 td {border-bottom:1px dashed #CCC;}
+#article tr.hover_pedido3:hover {background:#f4c8f6;background-image:url(../_images/gradient.png); background-repeat:repeat-x;}
+/* pedido4 */
+#article tr.hover_pedido4 {background:#f8d6f9; border-bottom:1px dashed #CCC;}
+#article tr.hover_pedido4 td {border-bottom:1px dashed #CCC;}
+#article tr.hover_pedido4:hover {background:#f4c8f6;background-image:url(../_images/gradient.png); background-repeat:repeat-x;}
+/* pedido5 */
+#article tr.hover_pedido5 {background:#d4fadf; border-bottom:1px dashed #CCC;}
+#article tr.hover_pedido5 td {border-bottom:1px dashed #CCC;}
+#article tr.hover_pedido5:hover {background:#CFC;background-image:url(../_images/gradient.png); background-repeat:repeat-x;}
+/* pedido6 */
+#article tr.hover_pedido6 {background:#f6e2c8; border-bottom:1px dashed #CCC;}
+#article tr.hover_pedido6 td {border-bottom:1px dashed #CCC;}
+#article tr.hover_pedido6:hover {background:#f8d8af;background-image:url(../_images/gradient.png); background-repeat:repeat-x;}
+/* pedido7 */
+#article tr.hover_pedido7 {background:#FFDFDF; border-bottom:1px dashed #CCC;}
+#article tr.hover_pedido7 td {border-bottom:1px dashed #CCC;}
+#article tr.hover_pedido7:hover {background:#fdcccc;background-image:url(../_images/gradient.png); background-repeat:repeat-x;}
+/* negro */
+#article tr.hover_negro {background:#FFDFDF; border-bottom:1px dashed #CCC;}
+#article tr.hover_negro td {border-bottom:1px dashed #CCC;}
+#article tr.hover_negro:hover {background:#fdcccc;background-image:url(../_images/gradient.png); background-repeat:repeat-x;}
+
+/* CAMPOS E FORMULÁRIOS */
+#article input.text, #article input.file {width:300px; border:1px solid #CCC; background:#FFF; height:15px; color:#999;}
+#article input.file {width:300px; border:1px solid #CCC; background:#FFF; height:20px; color:#999; margin-bottom:5px;}
+#article input.small {width:70px; border:1px solid #CCC; background:#FFF; height:15px; color:#999;}
+#article input.search {width:200px; border:1px solid #CCC; background:#FFF; color:#999; font-size:15px; padding:5px 5px 5px 5px;}
+#article select option {padding-left:5px; color:#999;}
+#article select.select {width:300px; border:1px solid #CCC; background:#FFF; height:15px; color:#999;}
+#article input.checkbox {margin-right:0px;}
+#article input.radio {margin-right:5px;}
+#article input.submit {background:#999; color:#FFF; font-weight:bold; text-align:center; border:#999 solid 1px; font-size:16px; padding:2px 10px; cursor:pointer; background-image:url(../_images/gradient.png); background-repeat:repeat-x;}
+#article input.submit_important {background:#930; color:#FFF; font-weight:bold; text-align:center; border:#CCC solid 1px; font-size:16px; padding:2px 10px; cursor:pointer; background-image:url(../_images/gradient.png); background-repeat:repeat-x;}
+#article input.submit_important:hover {background:#666; background-image:url(../_images/gradient.png); background-repeat:repeat-x;}
+#article input.submit_dont {background:#CCC; color:#FFF; font-weight:bold; text-align:center; border:#CCC solid 1px; font-size:16px; padding:2px 10px; cursor:default;}
+#article input.submit:hover, #article input.submit:focus {background:#CCC; background-image:url(../_images/gradient.png); background-repeat:repeat-x;}
+#article input.text:hover, #article input.text:focus, #article input.small:focus, #article input.small:hover, #article input.search_submit:hover, #article input.search_submit:focus, #article select.select:hover, #article select.select:focus, #article textarea:hover, #article textarea:focus  {background:#EFEFEF; background-image:url(../_images/gradient.png); background-repeat:repeat-x;}
+#article textarea {width:300px; border:1px solid #CCC; background:#FFF; height:300px; color:#999;}
+#article input.search_submit {background:#999; color:#FFF; font-weight:bold; text-align:center; border:#999 solid 1px; font-size:14px; padding:3px 10px; cursor:pointer; margin-left:10px;}
+#article input.search_submit:hover, #article input.search_submit:focus {background:#CCC; background-image:url(../_images/gradient.png); background-repeat:repeat-x;}
+
+/* -------------------------------- HEADER ---------------------------------------- */
+#header {width:100%; height:100px; background:#EEE;}
+#header p {color:#FFF; font-size:60px; font-weight:bold; float:right; padding-right:20px; padding-top:45px;}
+
+/* -------------------------------- SIDEBAR ---------------------------------------- */
+#sidebar {width:160px; height:100%; background:#EEE; padding-left:20px; padding-right:5px; padding-bottom:10px; float:left;}
+#sidebar ul li ul {padding-left:10px;}
+#sidebar ul a {text-decoration:none; padding:1px;}
+#sidebar ul a:hover {color:#EEE; background:#999;}
+#sidebar ul .title {font-weight:bold; font-size:14px; border:none;}
+#sidebar ul .divider {color:#CCC; border:none;}
+#sidebar ul .space {border:none;}
+#sidebar ul .important a {color:#930;}
+#sidebar ul .important a:hover {color:#EEE; background:#999;}
+
+/* -------------------------------- INDEX ---------------------------------------- */
+h1.login {margin:auto;color:#9ccb25; text-align:right; width:444px; font-size:40px; margin-bottom:3px;}
+.form_login {width:444px; height:255px; margin:auto; background:#9ccb25; text-align:center; color:#FFF;}
+.form_login input {width:240px; border:1px #333 solid; padding:4px;}
+.form_login label {font-weight:bold; color:#FFF; font-size:18px;}
+.form_login #submit {float:right; width:50px; background-color:#FFF; color:#9ccb25; border:none; font-weight:bold; margin-right:0px; margin-top:10px;}
+
+/* -------------------------------- OPERA CODEX ---------------------------------------- */
+.warning_content {text-align:center; font-weight:bold; color:#900; font-size:15px; margin-top:25%; padding:10px; border:1px solid #FF0; background-color:#FFC; background-repeat:repeat-x;}
+.warning_part {text-align:center; color:#900; font-weight:bold; padding:10px; border:1px solid #FF0; background-color:#FFC; background-image:url(../_images/gradient.png); background-repeat:repeat-x;}
+.warning_success {text-align:center; color:#060; font-weight:bold; padding:10px; border:1px solid #060; background-color:#CFC; margin-top:25%; font-size:15px; background-image:url(../_images/gradient.png); background-repeat:repeat-x;}
+.warning_success_part {text-align:center; color:#090; font-weight:bold; padding:10px; border:1px solid #0C0; background-color:#CFC; background-image:url(../_images/gradient.png); background-repeat:repeat-x;}
+.warning_instructions {background:#F5F5F5; border:1px solid #CCC; text-align:left; padding:5px; color:#999; background-image:url(../_images/gradient.png); background-repeat:repeat-x;} .warning_instructions a {background:#E6E6E6; color:#666; text-decoration:none;} .warning_instructions a:hover {background:#999; color:#FFF} .warning_instructions span, .warning_instructions stroke {color:#999;}
+.warning_alert_part {background:#FFDFDF; color:#F66; border:1px solid #F66; font-weight:bold; padding:10px; background-image:url(../_images/gradient.png); background-repeat:repeat-x;}

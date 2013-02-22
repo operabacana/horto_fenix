@@ -4,8 +4,8 @@
 
         <ul>
 
-            <li><img src="<?php echo site_url(); ?>imagens/pic1_quemsomos.png" /></li>
-            <li><img src="" /></li>
+            <li><img src="<?php echo site_url(); ?>imagens/jardinagem1.png" /></li>
+            <li><img src="<?php echo site_url(); ?>imagens/jardinagem2.png" /></li>
 
         </ul>
 
@@ -34,14 +34,9 @@ Este serviço cobre toda a região serrana do Rio de Janeiro.
              <div class="carrossel_projetos">
 
                 <ul>
-
-                    <li><img src="<?php echo site_url(); ?>imagens/carrossel.jpg" width="90" /></li>
-                    <li><img src="<?php echo site_url(); ?>imagens/carrossel.jpg" width="90" /></li>
-                    <li><img src="<?php echo site_url(); ?>imagens/carrossel.jpg" width="90" /></li>
-                    <li><img src="<?php echo site_url(); ?>imagens/carrossel.jpg" width="90" /></li>
-                    <li><img src="<?php echo site_url(); ?>imagens/carrossel.jpg" width="90" /></li>
-                    <li><img src="<?php echo site_url(); ?>imagens/carrossel.jpg" width="90" /></li>
-                    <li><img src="<?php echo site_url(); ?>imagens/carrossel.jpg" width="90" /></li>
+                    <?php foreach($jardinagens as $ind => $jardinagem){ ?>
+                        <li><img src="<?php echo site_url(); ?>fotos_jardinagem/P/<?php echo $jardinagem->foto_pequena; ?>" width="90" /></li>
+                    <?php } ?>
 
                 </ul>
 
@@ -61,7 +56,7 @@ Este serviço cobre toda a região serrana do Rio de Janeiro.
 
         <div class="topo_galeria">
 
-            <p><div class="sprite icones_menu_galeria"></div> <p class="texto_link jardinagem">Jardinagem</p></p>
+            <p><div class="sprite icones_menu_galeria icones_jardinagem"></div> <p class="texto_link jardinagem">Jardinagem</p></p>
             <a href="#" class="fechar_galeria fechar_jardinagem">X Fechar</a>
 
         </div>
@@ -74,31 +69,22 @@ Este serviço cobre toda a região serrana do Rio de Janeiro.
 
                 <ul>
 
+                    <?php foreach($jardinagens as $ind => $jardinagem){ ?>
                     <li>
-                        <img src="<?php echo site_url(); ?>imagens/galeria_full.jpg" width="601"/>
-                        <div class="ordena_infos infos_jardinagem">
+                        <img src="<?php echo site_url(); ?>fotos_jardinagem/G/<?php echo $jardinagem->foto_grande; ?>" width="601"/>
+                        <div class="ordena_infos infos_paisagismo">
                             <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
                                 <div class="viewport">
                                     <div class="overview">
-                                        <p><label>Jardim: </label> Casa&Jardim</p>
-                                        <p><label>Descrição: </label> Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.
-Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
-                                        <p><label>Problema: </label> Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
-                                        <p><label>Solução: </label>  Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.
-Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Pra lá , depois divoltis porris,
-paradis. Paisis, filhis, espiritis santis. Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.
-Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Pra lá , depois divoltis porris,
-paradis. Paisis, filhis, espiritis santis.</p>
+                                        <p><label class="label_infos_paisagismo">Jardim: </label> <?php echo $jardinagem->jardim; ?></p>
+                                        <p><label class="label_infos_paisagismo">Descrição: </label><?php echo $jardinagem->descricao; ?></p>
+                                        <p><label class="label_infos_paisagismo">Problema: </label><?php echo $jardinagem->problema; ?></p>
+                                        <p><label class="label_infos_paisagismo">Solução: </label><?php echo $jardinagem->solucao; ?></p>
                                     </div>
                                 </div>
                         </div>
                     </li>
-                    <li><img src="<?php echo site_url(); ?>imagens/galeria_full.jpg" width="601" /></li>
-                    <li><img src="<?php echo site_url(); ?>imagens/galeria_full2.jpg" width="601" /></li>
-                    <li><img src="<?php echo site_url(); ?>imagens/galeria_full3.jpg" width="601" /></li>
-                    <li><img src="<?php echo site_url(); ?>imagens/galeria_full4.jpg" width="601" /></li>
-                    <li><img src="<?php echo site_url(); ?>imagens/galeria_full5.jpg" width="601" /></li>
-                    <li><img src="<?php echo site_url(); ?>imagens/galeria_full6.jpg" width="601" /></li>
+                    <?php } ?>
 
                 </ul>
 
@@ -117,15 +103,9 @@ paradis. Paisis, filhis, espiritis santis.</p>
              <div class="carrossel_imagens_mini">
 
                 <ul>
-
-                    <li><img src="<?php echo site_url(); ?>imagens/galeria_mini.jpg" width="205" /></li>
-                    <li><img src="<?php echo site_url(); ?>imagens/galeria_mini.jpg" width="205" /></li>
-                    <li><img src="<?php echo site_url(); ?>imagens/galeria_mini.jpg" width="205" /></li>
-                    <li><img src="<?php echo site_url(); ?>imagens/galeria_mini.jpg" width="205" /></li>
-                    <li><img src="<?php echo site_url(); ?>imagens/galeria_mini.jpg" width="205" /></li>
-                    <li><img src="<?php echo site_url(); ?>imagens/galeria_mini.jpg" width="205" /></li>
-                    <li><img src="<?php echo site_url(); ?>imagens/galeria_mini.jpg" width="205" /></li>
-
+                    <?php foreach($jardinagens as $ind => $jardinagem){ ?>
+                        <li><img src="<?php echo site_url(); ?>fotos_jardinagem/P/<?php echo $jardinagem->foto_pequena; ?>" width="205" /></li>
+                    <?php } ?>
                 </ul>
 
              </div>

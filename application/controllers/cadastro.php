@@ -14,6 +14,8 @@ class Cadastro extends CI_controller{
 
 		if( $_SERVER['REQUEST_METHOD'] == 'POST' ){
 
+            $referer = $_SERVER['HTTP_REFERER'];
+
 			$this -> load -> library('form_validation');
 
 			$this -> form_validation -> set_rules('nome', $this -> lang -> line('label_form_field_name'), 'required|min_length[2]|xss_clean');
@@ -28,11 +30,13 @@ class Cadastro extends CI_controller{
 
                 $this -> session -> set_flashdata('feedback', 'success');
 
-		        redirect('/', 'refresh');
+		        redirect($referer, 'refresh');
 
 			}else{
 
-				$this -> index();
+                $this -> session -> set_flashdata('feedback', 'error');
+
+				redirect($referer, 'refresh');
 
 			}
 

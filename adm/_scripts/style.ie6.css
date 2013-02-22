@@ -1,0 +1,56 @@
+/* --------BOXES--------- */
+#article .boxes .border,
+#article tr.hover:hover,
+#article tr.hover_warning:hover,
+#article tr.hover_alert:hover,
+#article tr.hover_pedido1:hover,
+#article tr.hover_pedido2:hover,
+#article tr.hover_pedido3:hover,
+#article tr.hover_pedido4:hover,
+#article tr.hover_pedido5:hover,
+#article tr.hover_pedido6:hover,
+#article tr.hover_pedido7:hover,
+#article tr.hover_negro:hover,
+#article input.submit:hover, #article input.submit:focus,
+#article input.submit_important:hover,
+#article input.submit,
+#article input.submit_important,
+#article input.search_submit:hover, 
+#article input.search_submit:focus,
+#article input.text:hover, 
+#article input.text:focus, 
+#article input.small:focus,
+#article input.small:hover, 
+#article input.search_submit:hover, 
+#article input.search_submit:focus, 
+#article select.select:hover, 
+#article select.select:focus, 
+#article textarea:hover, 
+#article textarea:focus,
+#article tr td table tr td,
+.warning_content,
+.warning_part,
+.warning_success,
+.warning_success_part,
+.warning_instructions,
+.warning_alert_part,
+.box
+{ background-image:none;}
+
+
+
+#article #informations {}
+#article #informations .box {text-align:center; vertical-align:middle; width:175px; height:40px; background:#F5F5F5; float:left; padding:5px; margin-right:5px; margin-bottom:5px; border:1px dashed #CCC;  background-image:none; background-repeat:repeat-x;}
+#article #informations .box_alert {text-align:center; vertical-align:inherit; width:175px; height:40px; float:left; padding:5px; margin-right:5px; margin-bottom:5px;  border:1px dashed #FF0; background-color:#FFC;  background-image:none; background-repeat:repeat-x;}
+
+
+
+/* --------TABELAS--------- */
+
+#sidebar {width:192px;}
+
+#article {left:0px; position:absolute; right:10px; width:auto; }
+
+#user_info {position:absolute; top:0px; right:0px; width:550px; border-top:none; border-bottom:1px dashed #666;}
+
+
