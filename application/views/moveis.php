@@ -6,8 +6,8 @@
 
             <ul>
 
-                <li><a href="#" class="link_menu_interno link_interior"><div class="sprite icones_menu_interno interior"></div> <p class="texto_link interior">Interior</p></a></li>
-                <li><a href="#" class="link_menu_interno link_exterior"><div class="sprite icones_menu_interno exterior"></div> <p class="texto_link exterior">Exterior</p></a></li>
+                <li><a href="#" class="link_menu_interno link_interior galeria_interna"><div class="sprite icones_menu_interno interior"></div> <p class="texto_link interior">Interior</p></a></li>
+                <li><a href="#" class="link_menu_interno link_exterior galeria_interna"><div class="sprite icones_menu_interno exterior"></div> <p class="texto_link exterior">Exterior</p></a></li>
 
             </ul>
 
@@ -18,8 +18,8 @@
 
               <ul>
 
-                  <li><img src="<?php echo site_url(); ?>imagens/pic1_quemsomos.png" /></li>
-                  <li><img src="" /></li>
+                  <li><img src="<?php echo site_url(); ?>imagens/moveis1.png" /></li>
+                  <li><img src="<?php echo site_url(); ?>imagens/moveis2.png" /></li>
 
               </ul>
 
@@ -36,6 +36,147 @@ Acrescente essa decoração especial à sua casa, afinal, móveis de madeira nun
 
          </div>
 
+         <div class="order_listas">
+
+
+
+         </div>
+
     </article>
+
+</div>
+<div class="display back_galeria galeria_moveis"></div>
+<div class="display_internos ordena_galeria">
+
+    <div class="box_imgs box_imgs_moveis box_imgs_internos">
+
+        <div class="topo_galeria_internos">
+
+            <p><div class="sprite icones_menu_galeria icones_moveis"></div> <p class="texto_link moveis texto_link_galeria">Móveis</p></p>
+            <a href="#" class="fechar_moveis">X Fechar</a>
+
+        </div>
+
+         <div class="carrossel_galerias carrossel_galerias_internos">
+
+             <div class="ant ant_moveis"></div>
+
+             <div class="carrossel_imagens">
+
+                <ul>
+
+                    <?php foreach($internos as $ind=>$interno){ ?>
+
+                      <li>
+                          <img src="<?php echo site_url(); ?>fotos_moveis/G/<?php echo $interno->foto_grande; ?>" width="601"/>
+                          <div class="ordena_infos infos_moveis">
+                              <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+                                  <div class="viewport">
+                                      <div class="overview">
+                                          <p><label class="label_infos_moveis">Produto: </label><?php echo $interno->produto; ?></p>
+                                          <p><label class="label_infos_moveis">Descrição: </label><?php echo $interno->descricao; ?></p>
+                                          <p><label class="label_infos_moveis">Problema: </label><?php echo $interno->problema; ?></p>
+                                          <p><label class="label_infos_moveis">Solução: </label><?php echo $interno->solucao; ?></p>
+                                      </div>
+                                  </div>
+                          </div>
+                      </li>
+
+                    <?php } ?>
+
+                </ul>
+
+             </div>
+
+             <div class="prox prox_moveis"></div>
+
+         </div>
+
+    </div>
+
+    <div class="box_carrossel box_carrossel_moveis box_carrossel_internos">
+
+             <div class="ant_vert ant_vert_moveis"></div>
+
+             <div class="carrossel_imagens_mini carrossel_imagens_mini_intermos">
+
+                <ul>
+                    <?php foreach($internos as $ind=>$interno){ ?>
+                        <li><img src="<?php echo site_url(); ?>fotos_moveis/P/<?php echo $interno->foto_pequena; ?>" width="205" /></li>
+                    <?php } ?>
+                </ul>
+
+             </div>
+
+             <div class="prox_vert prox_vert_moveis"></div>
+
+    </div>
+
+</div>
+<div class="display_externos ordena_galeria">
+
+    <div class="box_imgs box_imgs_moveis box_imgs_externos">
+
+        <div class="topo_galeria_externos">
+
+            <p><div class="sprite icones_menu_galeria icones_moveis"></div> <p class="texto_link moveis texto_link_galeria">Móveis</p></p>
+            <a href="#" class="fechar_moveis">X Fechar</a>
+
+        </div>
+
+         <div class="carrossel_galerias carrossel_galerias_externos">
+
+             <div class="ant ant_moveis"></div>
+
+             <div class="carrossel_imagens">
+
+                <ul>
+
+                    <?php foreach($externos as $ind=>$externo){ ?>
+
+                      <li>
+                          <img src="<?php echo site_url(); ?>fotos_moveis/G/<?php echo $externo->foto_grande; ?>" width="601"/>
+                          <div class="ordena_infos infos_moveis">
+                              <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+                                  <div class="viewport">
+                                      <div class="overview">
+                                          <p><label class="label_infos_moveis">Produto: </label><?php echo $externo->produto; ?></p>
+                                          <p><label class="label_infos_moveis">Descrição: </label><?php echo $externo->descricao; ?></p>
+                                          <p><label class="label_infos_moveis">Problema: </label><?php echo $externo->problema; ?></p>
+                                          <p><label class="label_infos_moveis">Solução: </label><?php echo $externo->solucao; ?></p>
+                                      </div>
+                                  </div>
+                          </div>
+                      </li>
+
+                    <?php } ?>
+
+                </ul>
+
+             </div>
+
+             <div class="prox prox_moveis"></div>
+
+         </div>
+
+    </div>
+
+    <div class="box_carrossel box_carrossel_moveis box_carrossel_externos">
+
+             <div class="ant_vert ant_vert_moveis"></div>
+
+             <div class="carrossel_imagens_mini carrossel_imagens_mini_extermos">
+
+                <ul>
+                    <?php foreach($externos as $ind=>$externo){ ?>
+                        <li><img src="<?php echo site_url(); ?>fotos_moveis/P/<?php echo $externo->foto_pequena; ?>" width="205" /></li>
+                    <?php } ?>
+                </ul>
+
+             </div>
+
+             <div class="prox_vert prox_vert_moveis"></div>
+
+    </div>
 
 </div>

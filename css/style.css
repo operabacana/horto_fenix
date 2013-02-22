@@ -7,7 +7,6 @@
          url('futura2-normal.svg#CodeBoldRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 /*=====================================RESET (JÁ É PADRÃO) =======================================*/
@@ -29,12 +28,18 @@ h1 {font-size:18px;}
 .sprite{background:url(../imagens/sprite.png) no-repeat 0 0;}
 .textos{float:left; margin:4px 0 0 13px;}
 .texto_titulo{float:left; color:#e7742e; font-size:18px;}
-.texto_subtitulo{float:left; color:#fff; font-size:15px;}
+.texto_titulo_sucesso{color:#71c043;}
+.texto_titulo_erro{color:#fc2700;}
+.texto_subtitulo{float:left; color:#fff; font-size:15px; clear:both;}
+.texto_subtitulo_erro{color:#bc4330;}
 .order_form{float:left; clear:left;}
 .label{float:left; color:#e7742e; font-size:14px; text-align:right; min-width:50px; margin-right:5px;}
 input[type=text]{float:left; width:220px; height:15px; border-radius:3px; font-size:12px; padding:0 3px;}
 .submit{width:54px; height:18px; background:#e7742e; border:0; color:#fff; font-size:16px;  margin:-11px 0 0 4px; box-shadow:0px 1px 2px 1px #ee9a67 inset;}
+.submit:hover{background:#EE9966;}
 .container{width:967px; height:auto; margin:auto;}
+
+/************************************* SLIDER *************************************/
 .slider{width:961px; height:416px; overflow:hidden; position:relative; box-shadow:0 0 15px 1px #000; margin:25px 0 20px 0; z-index:901;}
 .slider ul, .slider ul li{float:left; position:relative;}
 .painel_button{position:absolute; right:20px; bottom:23px;}
@@ -43,16 +48,19 @@ input[type=text]{float:left; width:220px; height:15px; border-radius:3px; font-s
 .button:nth-child(2):hover{background:#5dd11f;}
 .button:nth-child(3):hover{background:#e4dc0d;}
 .button:nth-child(4):hover{background:#ed3615;}
+/************************************* SLIDER *************************************/
+
 .box_content{width:964px; height:429px; margin:25px 0 20px 0; box-shadow:0 0 15px 1px #000; position:relative; z-index:900;}
 
 /************************************* CARROSSEL *************************************/
 .carrossel{width:auto; height:100px; position:relative; float:left; margin:24px 0 0 37px;}
 .carrossel p{text-align:right; color:#fff; font-size:14px; margin-bottom:3px; padding-right:3px;}
 .carrossel ul li{margin:0 4px; cursor:pointer;}
-.prev{position:absolute; left:-59px; top:50%; cursor:pointer;}
-.next{position:absolute; right:-6px; top:50%; cursor:pointer;}
+.prev{position:absolute; left:-59px; top:35%; cursor:pointer;}
+.next{position:absolute; right:-6px; top:35%; cursor:pointer;}
 .prev:before{width:0; height:0; content:""; position:absolute; z-index:999; border-width:18px; border-right-width:36px; border-style:solid; border-color:transparent;}
 .next:before{width:0; height:0; content:""; position:absolute; z-index:999; border-width:18px; border-left-width:36px; border-style:solid; border-color:transparent;}
+.disabled{display:none;}
 /************************************* CARROSSEL *************************************/
 
 /************************************* MENUS INTERNOS *************************************/
@@ -73,17 +81,20 @@ input[type=text]{float:left; width:220px; height:15px; border-radius:3px; font-s
 /************************************* MENUS INTERNOS *************************************/
 
 /************************************* GALERIAS *************************************/
-.display{display:none;}
+.display, .display_internos, .display_externos{display:none;}
 .back_galeria{width:100%; height:100%; position:absolute; top:0; left:0; z-index:1000; opacity:0.7;}
 .ordena_galeria{width:878px; height:647px; position:absolute; top:50%; left:50%; margin:-323.5px 0 0 -439px; z-index:1001;}
 .box_imgs{width:636px; height:640px; float:left; box-shadow:0 0 11px -1px #000;}
+.box_imgs_internos, .box_imgs_externos{width:636px; height:640px; float:left; box-shadow:0 0 11px -1px #000;}
 .box_carrossel{width:220px; height:646px; float:right; box-shadow:0 0 11px -1px #000;}
 .topo_galeria{float: left; width: 100%; padding-top: 10px;}
-.topo_galeria p{font-size:16px; color:#fff;}
-.topo_galeria .icones_menu_galeria{width:33px; height:33px; float:left; background-position:-122px -43px; margin-left:20px;}
+.topo_galeria_internos, .topo_galeria_externos{float: left; width: 100%; padding-top: 10px;}
+.topo_galeria p, .topo_galeria_internos p, .topo_galeria_externos p{font-size:16px; color:#fff;}
+.topo_galeria .icones_menu_galeria, .topo_galeria_internos .icones_menu_galeria, .topo_galeria_externos .icones_menu_galeria{width:33px; height:33px; float:left; margin-left:20px;}
 .topo_galeria .fechar_galeria{float:right; font-size:16px; margin-right:20px;}
+.fechar_moveis{float:right; font-size:16px; margin-right:20px;}
 .carrossel_galerias{float:left; margin:11px 18px 5px 18px; position:relative;}
-.carrossel_galerias label, .carrossel_galerias p{font-family:Arial; color:#d2cc31; font-size:13px; }
+.carrossel_galerias label, .carrossel_galerias p{font-family:Arial; font-size:13px; }
 .carrossel_galerias p{color:#fff; clear:both; float:left; text-align:left; margin-bottom:2px;}
 .carrossel_galerias ul li{height:auto!important;}
 .ant{position:absolute; left:0px; top:203px; cursor:pointer; width:37px; height:66px; z-index:1000; border-radius:0 37px 37px 0;}
@@ -107,7 +118,32 @@ input[type=text]{float:left; width:220px; height:15px; border-radius:3px; font-s
 .noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
 .carrossel_imagens_mini{top:34px;}
 .carrossel_imagens_mini img{cursor:pointer;}
+.carrossel_imagens_mini_internos, .carrossel_imagens_mini_externos{top:34px;}
+.carrossel_imagens_mini img, .carrossel_imagens_mini_internos img, .carrossel_imagens_mini_externos img{cursor:pointer;}
 /************************************* GALERIAS *************************************/
+
+/************************************* LISTAS *************************************/
+.nome_lista{font-size:30px; color:#fff; text-align:left; float:left;}
+.texto_lista{font-family:Arial; font-size:14px; color:#fff; font-weight:normal; text-align:left; float:left; clear:both; margin-top:5px;}
+.order_listas{width:597px; float:left; margin:35px 0 0 33px;}
+.order_listas .icones_menu_interno{margin-right:7px;}
+.alfabeto{float:left; clear:both; margin-top:5px;}
+.lista { width: 579px; float:left; clear: both; margin:10px 0 10px 0; }
+.lista p{width:267px; text-align:left; color:#fff; font-family:Arial; font-size:15px; font-weight:normal; margin:2.5px 3px;}
+.lista .viewport { width:561px; height:215px; overflow: hidden; position: relative; }
+.lista .overview { list-style: none; position: absolute; left: 0; top: 0; padding-left:14px;}
+.lista .thumb .end,
+.lista .thumb { background-color: #003D5D; }
+.lista .scrollbar { position: relative; float: right; width: 15px; }
+.lista .track { background-color: #D8EEFD; height: 100%; width:13px; position: relative; padding: 0 1px; }
+.lista .thumb { height: 20px; width: 13px; cursor: pointer; overflow: hidden; position: absolute; top: 0; }
+.lista .thumb .end { overflow: hidden; height: 5px; width: 13px; }
+.lista .disable{ display: none; }
+.letra{ width:20px; float:left; color:#1c4605; font-size:16px; margin-right:1px; }
+.letra:hover{ background:#35c857; }
+.impar{float:left;}
+.par{float:right;}
+/************************************* LISTAS *************************************/
 
 /************************************* HEADER *************************************/
 header{width:100%; height:96px;}
@@ -149,8 +185,9 @@ footer address{float:right; margin:12px 20px 0 0; color:#fff; font-size:17px; fo
 .icone_pagina{width:45px; height:45px; background-position:-2px -87px; float:left; margin-right:18px;}
 #order_texto h1{text-align:left; color:#fff; font-size:35px;}
 #order_texto p{text-align:justify; color:#fff; font-size:14.6px; margin-top:10px;}
-.slider_quemsomos, .slider_paisagismo, .slider_plantas{float:left; width:289px; height:429px; box-shadow:none; margin:0;}
-.slider_quemsomos .painel_button, .slider_paisagismo .painel_button, .slider_plantas .painel_button{left:0; bottom:10px;}
+.slider_quemsomos, .slider_paisagismo, .slider_plantas, .slider_vasos{float:left; width:298px; height:429px; box-shadow:none; margin:0;}
+.slider_quemsomos{width:295px;}
+.slider_quemsomos .painel_button, .slider_paisagismo .painel_button, .slider_plantas .painel_button, .slider_vasos .painel_button{left:0; bottom:10px;}
 /************************************* QUEM SOMOS *************************************/
 
 /************************************* CONTATO *************************************/
@@ -167,24 +204,39 @@ footer address{float:right; margin:12px 20px 0 0; color:#fff; font-size:17px; fo
 /************************************* CONTATO *************************************/
 
 /************************************* PAISAGISMO *************************************/
-#content_paisagismo{height:499px; background:#e77630; border-bottom-right-radius:100px;}
+#content_paisagismo{height:484px; background:#e77630; border-bottom-right-radius:100px;}
+.slider_paisagismo{height:485px;}
 #content_paisagismo .prev:before{border-right-color:#cb6324;}
 #content_paisagismo .next:before{border-left-color:#cb6324;}
 #content_paisagismo .icone_pagina{background-position:-52px -86px; height:46px;}
+.galeria_paisagismo, .box_imgs_paisagismo, .box_carrossel_paisagismo{background:#803609;}
+.icones_paisagismo{background-position:-162px -43px;}
+.box_imgs_paisagismo ul li img{border:1px solid #e77630;}
+.fechar_paisagismo{color:#e77630;}
+.label_infos_paisagismo{color:#ff9c00;}
+.ant_paisagismo,.prox_paisagismo{background:#803609;}
+.ant_paisagismo:before{border-right-color:#e77630;}
+.ant_vert_paisagismo:before{border-bottom-color:#e77630;}
+.ant_vert_paisagismo, .prox_vert_paisagismo{background:#803609;}
+.prox_paisagismo:before{border-left-color:#e77630;}
+.prox_vert_paisagismo:before{border-top-color:#e77630;}
+.infos_paisagismo .thumb .end, .infos_paisagismo .thumb{background:#e77630;}
 /************************************* PAISAGISMO *************************************/
 
 /************************************* JARDINAGEM *************************************/
 #content_jardinagem{height:499px; background:#b9b432; border-bottom-left-radius:100px;}
 #content_jardinagem #order_texto{margin:78px 0 0 33px;}
-.slider_jardinagem{float:right; width:289px; height:429px; overflow:hidden; position:relative; box-shadow:none; margin:0;}
+.slider_jardinagem{float:right; width:289px; height:499px; right:3px; overflow:hidden; position:relative; box-shadow:none; margin:0;}
 #content_jardinagem .icone_pagina{background-position:-102px -86px; width:48px; height:48px;}
 #content_jardinagem .carrossel{margin:36px 0 0 106px;}
 #content_jardinagem .carrossel p{color:#716e0d;}
 #content_jardinagem .prev:before{border-right-color:#928e19;}
 #content_jardinagem .next:before{border-left-color:#928e19;}
 .galeria_jardinagem, .box_imgs_jardinagem, .box_carrossel_jardinagem{background:#3b3909;}
+.icones_jardinagem{background-position:-122px -43px;}
 .box_imgs_jardinagem ul li img{border:1px solid #5a5715;}
 .fechar_jardinagem{color:#d2cc31;}
+.label_infos_jardinagem{color:#d2cc31;}
 .ant_jardinagem,.prox_jardinagem{background:#3b3909;}
 .ant_jardinagem:before{border-right-color:#b9b432;}
 .ant_vert_jardinagem:before{border-bottom-color:#b9b432;}
@@ -192,18 +244,20 @@ footer address{float:right; margin:12px 20px 0 0; color:#fff; font-size:17px; fo
 .prox_jardinagem:before{border-left-color:#b9b432;}
 .prox_vert_jardinagem:before{border-top-color:#b9b432;}
 .infos_jardinagem .thumb .end, .infos_jardinagem .thumb{background:#b9b432;}
+#content_plantas .lista .track {background:#173606;}
+#content_plantas .thumb .end, #content_plantas .thumb { background:#35c857; }
 /************************************* JARDINAGEM *************************************/
 
 /************************************* PLANTAS *************************************/
-#content_plantas{height:499px; background:#528a33; border-bottom-right-radius:100px;}
+#content_plantas{height:448px; background:#528a33; border-bottom-right-radius:100px;}
 #content_plantas .icone_pagina{background-position:-2px -137px;}
 .menu_plantas{background:#173606;}
-.slider_plantas{height:434px;}
+.slider_plantas{width:283px; height:384px;}
 /************************************* PLANTAS *************************************/
 
 /************************************* MOVEIS *************************************/
 #content_moveis{height:456px; background:#bb432f; border-bottom-left-radius:100px;}
-#content_moveis .slider{height:392px;}
+#content_moveis .slider{height:392px; right:0px; width:285px;}
 #content_moveis .icone_pagina{background-position:-105px -292px; width:49px; height:49px;}
 .menu_moveis{background:#64180b;}
 .menu_moveis ul, .menu_vasos ul{float:left; margin-left:215px;}
@@ -211,14 +265,34 @@ footer address{float:right; margin:12px 20px 0 0; color:#fff; font-size:17px; fo
 #content_moveis .link_menu_interno:hover .interior{background-position:-3px -392px; color:#cb6e5e;}
 #content_moveis .exterior{background-position:-53px -342px;}
 #content_moveis .link_menu_interno:hover .exterior{background-position:-53px -392px; color:#dc3014;}
+.galeria_moveis, .box_imgs_moveis, .box_carrossel_moveis{background:#571509;}
+.icones_moveis{background-position:-42px -43px;}
+.box_imgs_moveis ul li img{border:1px solid #b93620;}
+.fechar_moveis{color:#fe2601;}
+.label_infos_moveis{color:#fe2601;}
+.ant_moveis,.prox_moveis{background:#571509;}
+.ant_moveis:before{border-right-color:#fe2601;}
+.ant_vert_moveis:before{border-bottom-color:#fe2601;}
+.ant_vert_moveis, .prox_vert_moveis{background:#571509;}
+.prox_moveis:before{border-left-color:#fe2601;}
+.prox_vert_moveis:before{border-top-color:#fe2601;}
+.infos_moveis .track { background-color: #D8EEFD; }
+.infos_moveis .thumb .end, .infos_moveis .thumb { background-color: #d4361b; }
 /************************************* MOVEIS *************************************/
 
 /************************************* VASOS *************************************/
-#content_vasos{height:499px; background:#d68d3f; border-bottom-right-radius:100px;}
+#content_vasos{height:451px; background:#d68d3f; border-bottom-right-radius:100px;}
+.slider_vasos{width:285px; height:387px;}
+#content_vasos .icone_pagina{background-position:-105px -442px;}
 .menu_vasos{background:#c57b2b;}
 #content_vasos .link_menu_interno:hover .texto_link{color:#7e4201;}
 #content_vasos .inorganico{background-position:-104px -342px;}
 #content_vasos .link_menu_interno:hover .inorganico{background-position:-104px -392px; color:#7e4201;}
-#content_vasos .organico{background-position:-3px -442px;}
-#content_vasos .link_menu_interno:hover .organico{background-position:-53px -442px; color:#7e4201;}
+#content_vasos .organico{background-position:-4px -442px;}
+#content_vasos .link_menu_interno:hover .organico{background-position:-54px -442px; color:#7e4201;}
+.lista_vasos{display:none;}
+.lista_vasos .letra { color:#ffecd7; }
+.lista_vasos .letra:hover{ background:#ff8a00; }
+.lista_vasos .track { background-color: #c57b2b; }
+.lista_vasos .thumb .end, .lista_vasos .thumb { background-color: #fec88d; }
 /************************************* VASOS *************************************/

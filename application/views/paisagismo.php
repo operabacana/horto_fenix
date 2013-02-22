@@ -4,8 +4,8 @@
 
         <ul>
 
-            <li><img src="<?php echo site_url(); ?>imagens/pic1_quemsomos.png" /></li>
-            <li><img src="" /></li>
+            <li><img src="<?php echo site_url(); ?>imagens/paisagismo1.png" /></li>
+            <li><img src="<?php echo site_url(); ?>imagens/paisagismo2.png" /></li>
 
         </ul>
 
@@ -36,13 +36,9 @@ As reuniões para acompanhamento do projeto podem ainda ser feitas na lanchonete
 
                 <ul>
 
-                    <li><img src="<?php echo site_url(); ?>imagens/carrossel.jpg" width="90" /></li>
-                    <li><img src="<?php echo site_url(); ?>imagens/carrossel.jpg" width="90" /></li>
-                    <li><img src="<?php echo site_url(); ?>imagens/carrossel.jpg" width="90" /></li>
-                    <li><img src="<?php echo site_url(); ?>imagens/carrossel.jpg" width="90" /></li>
-                    <li><img src="<?php echo site_url(); ?>imagens/carrossel.jpg" width="90" /></li>
-                    <li><img src="<?php echo site_url(); ?>imagens/carrossel.jpg" width="90" /></li>
-                    <li><img src="<?php echo site_url(); ?>imagens/carrossel.jpg" width="90" /></li>
+                    <?php foreach($paisagismos as $ind => $paisagismo){ ?>
+                        <li><img src="<?php echo site_url(); ?>fotos_paisagismo/P/<?php echo $paisagismo->foto_pequena; ?>" width="90" /></li>
+                    <?php } ?>
 
                 </ul>
 
@@ -53,5 +49,69 @@ As reuniões para acompanhamento do projeto podem ainda ser feitas na lanchonete
          </div>
 
     </article>
+
+</div>
+<div class="display back_galeria galeria_paisagismo"></div>
+<div class="display ordena_galeria">
+
+    <div class="box_imgs box_imgs_paisagismo">
+
+        <div class="topo_galeria">
+
+            <p><div class="sprite icones_menu_galeria icones_paisagismo"></div> <p class="texto_link paisagismo">Paisagismo</p></p>
+            <a href="#" class="fechar_galeria fechar_paisagismo">X Fechar</a>
+
+        </div>
+
+         <div class="carrossel_galerias">
+
+             <div class="ant ant_paisagismo"></div>
+
+             <div class="carrossel_imagens">
+
+                <ul>
+                    <?php foreach($paisagismos as $ind => $paisagismo){ ?>
+                    <li>
+                        <img src="<?php echo site_url(); ?>fotos_paisagismo/G/<?php echo $paisagismo->foto_grande; ?>" width="601"/>
+                        <div class="ordena_infos infos_paisagismo">
+                            <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+                                <div class="viewport">
+                                    <div class="overview">
+                                        <p><label class="label_infos_paisagismo">Projeto: </label> <?php echo $paisagismo->projeto; ?></p>
+                                        <p><label class="label_infos_paisagismo">Descrição: </label><?php echo $paisagismo->descricao; ?></p>
+                                        <p><label class="label_infos_paisagismo">Problema: </label><?php echo $paisagismo->problema; ?></p>
+                                        <p><label class="label_infos_paisagismo">Solução: </label><?php echo $paisagismo->solucao; ?></p>
+                                    </div>
+                                </div>
+                        </div>
+                    </li>
+                    <?php } ?>
+                </ul>
+
+             </div>
+
+             <div class="prox prox_paisagismo"></div>
+
+         </div>
+
+    </div>
+
+    <div class="box_carrossel box_carrossel_paisagismo">
+
+             <div class="ant_vert ant_vert_paisagismo"></div>
+
+             <div class="carrossel_imagens_mini">
+
+                <ul>
+                    <?php foreach($paisagismos as $ind => $paisagismo){ ?>
+                        <li><img src="<?php echo site_url(); ?>fotos_paisagismo/P/<?php echo $paisagismo->foto_pequena; ?>" width="205" /></li>
+                    <?php } ?>
+                </ul>
+
+             </div>
+
+             <div class="prox_vert prox_vert_paisagismo"></div>
+
+    </div>
 
 </div>

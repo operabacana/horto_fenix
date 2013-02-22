@@ -4,8 +4,8 @@
 
         <ul>
 
-            <li><img src="<?php echo site_url(); ?>imagens/pic1_quemsomos.png" /></li>
-            <li><img src="" /></li>
+            <li><img src="<?php echo site_url(); ?>imagens/quemsomos1.png" /></li>
+            <li><img src="<?php echo site_url(); ?>imagens/quemsomos2.png" /></li>
 
         </ul>
 

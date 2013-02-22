@@ -1,0 +1,28 @@
+#user_info,
+#article input.submit,
+#article input.submit_important,
+#article input.submit_dont,
+#article input.search_submit,
+#header img,
+#header p.user,
+#sidebar,
+.TB_ToolbarSet,
+#xExpanded
+{display:none; width:0%; height:0%;}
+
+span.pagebreak {page-break-after:always;}
+
+#header p.info {font-size:20px; font-weight:bold; text-align:center; text-decoration:underline;}
+
+#article h2 {margin-bottom:-25px;}
+#article table td h2 {margin-bottom:0px; font-size:18px; font-weight:bold;}
+#article input,
+#article select
+{border:1px solid #999; -moz-border-radius:6px; -webkit-border-radius:6px;}
+#article p.warning_instructions {margin-bottom:-10px;}
+#article table td.title {font-size:15px; font-weight:bold; text-decoration:underline; padding-top:20px;}
+#article table td {padding:3px;}
+#article table {page-break-after:auto;}
+#article table table td {border:1px solid #999; -moz-border-radius:6px; -webkit-border-radius:6px; text-align:center;}
+
+#article #informations .box, #article #informations .box_alert {border:1px solid #999; -moz-border-radius:6px; -webkit-border-radius:6px; display:inline-block; text-align:center; padding:3px;}
