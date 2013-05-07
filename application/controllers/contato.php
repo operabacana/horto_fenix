@@ -40,7 +40,7 @@ class Contato extends CI_controller{
 				$assunto = strip_tags($this -> input -> post('assunto', TRUE));
 				$mensagem = strip_tags($this -> input -> post('mensagem', TRUE));
 
-                $this -> session -> set_flashdata('feedback', 'success');
+                $this -> session -> set_flashdata('feedbackContact', 'success');
 
                 $emailContato = $this -> config -> item('email_contato');
 				$emailContatoExtra = $this -> config -> item('email_contato_extra');

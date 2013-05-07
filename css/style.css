@@ -10,7 +10,7 @@
 }
 
 /*=====================================RESET (JÁ É PADRÃO) =======================================*/
-body { margin:0px; font-family:futura2; font-size:10px; background:url(../imagens/textura.jpg); color:#000; text-align:center; overflow-x:hidden;}
+body { margin:0px; font-family:Arial; font-size:10px; background:url(../imagens/textura.jpg); color:#000; text-align:center; overflow-x:hidden;}
 ::selection, ::-moz-selection, ::-webkit-selection{background-color:#50321d;}
 img {border:none;}
 a {color:#000; font-size:1em; text-decoration:none; cursor:pointer;}
@@ -22,39 +22,39 @@ input, textarea{padding:0px; margin:0px; border:0; font-size:13px; width:220px; 
 textarea{height:56px;}
 input[type=submit], input[type=radio], input[type=checkbox], select {cursor:pointer;}
 h1 {font-size:18px;}
-.erro{background-color:#FFB7B7; width:597px; margin-left:93px; color:red; font-size:14px;}
-.success{background-color:#1d4107; width:597px; margin-left:93px; color:#fff; font-size:14px;}
+.erro{background-color:#FFB7B7; width:598px; margin-left:125px; color:red; font-size:14px;}
+.success{background-color:#1d4107; width:598px; margin-left:125px; color:#fff; font-size:14px;}
 .error{background-color:#FFB7B7;}
 .sprite{background:url(../imagens/sprite.png) no-repeat 0 0;}
-.textos{float:left; margin:4px 0 0 13px;}
+.textos{float:left; margin:4px 0 0 10px;}
 .texto_titulo{float:left; color:#e7742e; font-size:18px;}
 .texto_titulo_sucesso{color:#71c043;}
 .texto_titulo_erro{color:#fc2700;}
 .texto_subtitulo{float:left; color:#fff; font-size:15px; clear:both;}
 .texto_subtitulo_erro{color:#bc4330;}
-.order_form{float:left; clear:left;}
-.label{float:left; color:#e7742e; font-size:14px; text-align:right; min-width:50px; margin-right:5px;}
+.order_form{float:left; clear:left; margin-bottom:4px; margin-left:10px;}
+.label{float:left; color:#e7742e; font-size:14px; text-align:left; min-width:50px; margin-right:5px;}
 input[type=text]{float:left; width:220px; height:15px; border-radius:3px; font-size:12px; padding:0 3px;}
-.submit{width:54px; height:18px; background:#e7742e; border:0; color:#fff; font-size:16px;  margin:-11px 0 0 4px; box-shadow:0px 1px 2px 1px #ee9a67 inset;}
+.submit{width:54px; height:21px; background:#e7742e; border:0; color:#fff; font-size:16px;  margin:-11px 0 0 4px; box-shadow:0px 1px 2px 1px #ee9a67 inset;}
 .submit:hover{background:#EE9966;}
 .container{width:967px; height:auto; margin:auto;}
+.box_content{width:964px; height:429px; margin:25px 0 20px 0; box-shadow:0 0 15px 1px #000; position:relative; z-index:900;}
 
 /************************************* SLIDER *************************************/
 .slider{width:961px; height:416px; overflow:hidden; position:relative; box-shadow:0 0 15px 1px #000; margin:25px 0 20px 0; z-index:901;}
 .slider ul, .slider ul li{float:left; position:relative;}
 .painel_button{position:absolute; right:20px; bottom:23px;}
 .button{float:left; width:15px; height:15px; border-radius:10px; background:#fff; margin:0 6px; cursor:pointer;}
-.button:nth-child(1):hover{background:#f98a07;}
-.button:nth-child(2):hover{background:#5dd11f;}
-.button:nth-child(3):hover{background:#e4dc0d;}
-.button:nth-child(4):hover{background:#ed3615;}
+.button:nth-child(1){background:#f98a07;}
+.button:nth-child(1):hover{background:#f98a07!important;}
+.button:nth-child(2):hover{background:#e4dc0d!important;}
+.button:nth-child(3):hover{background:#5dd11f!important;}
+.button:nth-child(4):hover{background:#ed3615!important;}
 /************************************* SLIDER *************************************/
-
-.box_content{width:964px; height:429px; margin:25px 0 20px 0; box-shadow:0 0 15px 1px #000; position:relative; z-index:900;}
 
 /************************************* CARROSSEL *************************************/
 .carrossel{width:auto; height:100px; position:relative; float:left; margin:24px 0 0 37px;}
-.carrossel p{text-align:right; color:#fff; font-size:14px; margin-bottom:3px; padding-right:3px;}
+.carrossel p{text-align:right; color:#fff; font-size:14px; margin-bottom:3px; padding-right:3px; font-weight:bold;}
 .carrossel ul li{margin:0 4px; cursor:pointer;}
 .prev{position:absolute; left:-59px; top:35%; cursor:pointer;}
 .next{position:absolute; right:-6px; top:35%; cursor:pointer;}
@@ -68,7 +68,8 @@ input[type=text]{float:left; width:220px; height:15px; border-radius:3px; font-s
 .menu_article ul{float:right; margin-top:8px;}
 .menu_article ul li{float:left;}
 .icones_menu_interno{width:48px; height:45px; float:left; background-position:-52px -137px;}
-.link_menu_interno{display:block; color:#fff; font-size:19px; height:auto; float:left; margin:0 5px;}
+.link_menu_interno{display:block; color:#fff; font-size:17px; height:auto; float:left; margin:0 5px;}
+.link_menu_interno .texto_link{margin-top:15px;}
 .link_menu_interno:hover .jardim{background-position:-102px -137px; color:#2ea449;}
 .interior{background-position:-3px -192px;}
 .link_menu_interno:hover .interior{background-position:-3px -242px; color:#7ed96d;}
@@ -109,7 +110,7 @@ input[type=text]{float:left; width:220px; height:15px; border-radius:3px; font-s
 .ordena_infos .viewport { width:576px; height:146px; overflow: hidden; position: relative; }
 .ordena_infos .overview { list-style: none; position: absolute; left: 0; top: 0; }
 .ordena_infos .thumb .end,
-.ordena_infos .thumb { background-color: #003D5D; }
+.ordena_infos .thumb { background-color: #003D5D; position:relative; }
 .ordena_infos .scrollbar { position: relative; float: right; width: 15px; }
 .ordena_infos .track { background-color: #D8EEFD; height: 100%; width:13px; position: relative; padding: 0 1px; }
 .ordena_infos .thumb { height: 20px; width: 13px; cursor: pointer; overflow: hidden; position: absolute; top: 0; }
@@ -123,22 +124,13 @@ input[type=text]{float:left; width:220px; height:15px; border-radius:3px; font-s
 /************************************* GALERIAS *************************************/
 
 /************************************* LISTAS *************************************/
-.nome_lista{font-size:30px; color:#fff; text-align:left; float:left;}
+.nome_lista{font-size:30px; color:#fff; text-align:left; float:left; font-family:futura2;}
 .texto_lista{font-family:Arial; font-size:14px; color:#fff; font-weight:normal; text-align:left; float:left; clear:both; margin-top:5px;}
 .order_listas{width:597px; float:left; margin:35px 0 0 33px;}
 .order_listas .icones_menu_interno{margin-right:7px;}
 .alfabeto{float:left; clear:both; margin-top:5px;}
-.lista { width: 579px; float:left; clear: both; margin:10px 0 10px 0; }
-.lista p{width:267px; text-align:left; color:#fff; font-family:Arial; font-size:15px; font-weight:normal; margin:2.5px 3px;}
-.lista .viewport { width:561px; height:215px; overflow: hidden; position: relative; }
-.lista .overview { list-style: none; position: absolute; left: 0; top: 0; padding-left:14px;}
-.lista .thumb .end,
-.lista .thumb { background-color: #003D5D; }
-.lista .scrollbar { position: relative; float: right; width: 15px; }
-.lista .track { background-color: #D8EEFD; height: 100%; width:13px; position: relative; padding: 0 1px; }
-.lista .thumb { height: 20px; width: 13px; cursor: pointer; overflow: hidden; position: absolute; top: 0; }
-.lista .thumb .end { overflow: hidden; height: 5px; width: 13px; }
-.lista .disable{ display: none; }
+.lista { width: 579px; height:210px; float:left; clear: both; margin:10px 0 10px 0; overflow:auto;}
+.lista li{width:267px; text-align:left; color:#fff; font-family:Arial; font-size:15px; font-weight:normal; margin:2.5px 3px;}
 .letra{ width:20px; float:left; color:#1c4605; font-size:16px; margin-right:1px; }
 .letra:hover{ background:#35c857; }
 .impar{float:left;}
@@ -151,12 +143,13 @@ header article{width:100%; height:39px; background:#402817; box-shadow:0 -3px 13
 #back_menu_header{width:967px; height:100%; margin:auto; position:relative;}
 #menu_header{float:right; margin:12px 0 0 0; }
 #menu_header li{float:left; margin:0 18px;}
+#menu_header li a, nav ul li a{font-family:futura2;}
 .header_menu{color:#a3785a; font-size:16px;}
 .header_menu:hover{color:#fff;}
 #logo{display:block; width:182px; height:174px; position:absolute; z-index:999; left:12px; top:0; box-shadow:0 0px 13px -2px #000;}
 #back_nav{width:100%; height:57px; background:#50321d;}
 nav{width:967px; height:100%; margin:auto;}
-nav ul, nav ul li{float:left; margin:8px 0 0 223px;}
+nav ul, nav ul li{float:left; margin:13px 0 0 223px;}
 nav ul li{margin:0 9px;}
 .link_menu{display:block; color:#fff; font-size:16px; height:auto; float:left;}
 .icones_menu{width:33px; height:33px; float:left; background-position:-162px -3px;}
@@ -182,8 +175,10 @@ footer address{float:right; margin:12px 20px 0 0; color:#fff; font-size:17px; fo
 /************************************* QUEM SOMOS *************************************/
 #content_quemsomos{background:#d99718; border-bottom-right-radius:100px;}
 #order_texto{width:597px; float:left; margin:35px 0 0 33px;}
+#content_quemsomos #order_texto{margin:20px 0 0 33px;}
+#content_quemsomos #order_texto p{line-height:18px;}
 .icone_pagina{width:45px; height:45px; background-position:-2px -87px; float:left; margin-right:18px;}
-#order_texto h1{text-align:left; color:#fff; font-size:35px;}
+#order_texto h1{text-align:left; color:#fff; font-size:35px; font-family:futura2;}
 #order_texto p{text-align:justify; color:#fff; font-size:14.6px; margin-top:10px;}
 .slider_quemsomos, .slider_paisagismo, .slider_plantas, .slider_vasos{float:left; width:298px; height:429px; box-shadow:none; margin:0;}
 .slider_quemsomos{width:295px;}
@@ -192,22 +187,25 @@ footer address{float:right; margin:12px 20px 0 0; color:#fff; font-size:17px; fo
 
 /************************************* CONTATO *************************************/
 #content_contato{height:354px; background:#609e3b; border-bottom-left-radius:100px;}
-#ordena_form{width:700px; float:right; margin:0px 129px 0 0;}
-#content_contato h1{text-align:left; color:#1d4107; font-size:35px; margin-left:92px;}
-#content_contato p{text-align:left; color:#fff; font-size:12px; margin-left:92px;}
-.label_contato{min-width:88px; color:#1e4109; font-size:18px;}
+#ordena_form{width:724px; float:right; margin:0px 129px 0 0;}
+#content_contato h1{text-align:left; color:#1d4107; font-size:35px; margin-left:125px;}
+#content_contato p{text-align:left; color:#fff; font-size:12px; margin-left:125px;}
+.label_contato{min-width:93px; color:#1e4109; font-size:18px; margin-right:22px; text-align:right;}
 #ordena_form input, textarea{margin-top:6px; height:81px; padding:0 3px;}
-#ordena_form input{width:246px; height:16px; border-radius:0;}
+#ordena_form input{width:235px; height:16px; border-radius:0;}
 #ordena_form input[name=endereco], #ordena_form input[name=assunto], #ordena_form textarea{width:591px;}
-#ordena_form .submit{width:70px; height:22px; margin-left:93px;}
+#ordena_form .submit{width:70px; height:22px; margin-left:125px;}
 #content_contato address{float:right; color:#173604; font-size:17px; font-style:normal; text-align:right; margin-right:141px;}
 /************************************* CONTATO *************************************/
 
 /************************************* PAISAGISMO *************************************/
 #content_paisagismo{height:484px; background:#e77630; border-bottom-right-radius:100px;}
+#content_paisagismo #order_texto{margin-top:20px;}
 .slider_paisagismo{height:485px;}
 #content_paisagismo .prev:before{border-right-color:#cb6324;}
+#content_paisagismo .prev:hover:before{border-right-color:#DC7638;}
 #content_paisagismo .next:before{border-left-color:#cb6324;}
+#content_paisagismo .next:hover:before{border-left-color:#DC7638;}
 #content_paisagismo .icone_pagina{background-position:-52px -86px; height:46px;}
 .galeria_paisagismo, .box_imgs_paisagismo, .box_carrossel_paisagismo{background:#803609;}
 .icones_paisagismo{background-position:-162px -43px;}
@@ -216,10 +214,14 @@ footer address{float:right; margin:12px 20px 0 0; color:#fff; font-size:17px; fo
 .label_infos_paisagismo{color:#ff9c00;}
 .ant_paisagismo,.prox_paisagismo{background:#803609;}
 .ant_paisagismo:before{border-right-color:#e77630;}
+.ant_paisagismo:hover:before{border-right-color:#EB8B52;}
 .ant_vert_paisagismo:before{border-bottom-color:#e77630;}
+.ant_vert_paisagismo:hover:before{border-bottom-color:#EB8B52;}
 .ant_vert_paisagismo, .prox_vert_paisagismo{background:#803609;}
 .prox_paisagismo:before{border-left-color:#e77630;}
+.prox_paisagismo:hover:before{border-left-color:#EB8B52;}
 .prox_vert_paisagismo:before{border-top-color:#e77630;}
+.prox_vert_paisagismo:hover:before{border-top-color:#EB8B52;}
 .infos_paisagismo .thumb .end, .infos_paisagismo .thumb{background:#e77630;}
 /************************************* PAISAGISMO *************************************/
 
@@ -231,7 +233,9 @@ footer address{float:right; margin:12px 20px 0 0; color:#fff; font-size:17px; fo
 #content_jardinagem .carrossel{margin:36px 0 0 106px;}
 #content_jardinagem .carrossel p{color:#716e0d;}
 #content_jardinagem .prev:before{border-right-color:#928e19;}
+#content_jardinagem .prev:hover:before{border-right-color:#ACA91E;}
 #content_jardinagem .next:before{border-left-color:#928e19;}
+#content_jardinagem .next:hover:before{border-left-color:#ACA91E;}
 .galeria_jardinagem, .box_imgs_jardinagem, .box_carrossel_jardinagem{background:#3b3909;}
 .icones_jardinagem{background-position:-122px -43px;}
 .box_imgs_jardinagem ul li img{border:1px solid #5a5715;}
@@ -239,10 +243,14 @@ footer address{float:right; margin:12px 20px 0 0; color:#fff; font-size:17px; fo
 .label_infos_jardinagem{color:#d2cc31;}
 .ant_jardinagem,.prox_jardinagem{background:#3b3909;}
 .ant_jardinagem:before{border-right-color:#b9b432;}
+.ant_jardinagem:hover:before{border-right-color:#CBC83D;}
 .ant_vert_jardinagem:before{border-bottom-color:#b9b432;}
+.ant_vert_jardinagem:hover:before{border-bottom-color:#CBC83D;}
 .ant_vert_jardinagem, .prox_vert_jardinagem{background:#3b3909;}
 .prox_jardinagem:before{border-left-color:#b9b432;}
+.prox_jardinagem:hover:before{border-left-color:#CBC83D;}
 .prox_vert_jardinagem:before{border-top-color:#b9b432;}
+.prox_vert_jardinagem:hover:before{border-top-color:#CBC83D;}
 .infos_jardinagem .thumb .end, .infos_jardinagem .thumb{background:#b9b432;}
 #content_plantas .lista .track {background:#173606;}
 #content_plantas .thumb .end, #content_plantas .thumb { background:#35c857; }
@@ -272,16 +280,21 @@ footer address{float:right; margin:12px 20px 0 0; color:#fff; font-size:17px; fo
 .label_infos_moveis{color:#fe2601;}
 .ant_moveis,.prox_moveis{background:#571509;}
 .ant_moveis:before{border-right-color:#fe2601;}
+.ant_moveis:hover:before{border-right-color:#FE5E41;}
 .ant_vert_moveis:before{border-bottom-color:#fe2601;}
+.ant_vert_moveis:hover:before{border-bottom-color:#FE5E41;}
 .ant_vert_moveis, .prox_vert_moveis{background:#571509;}
 .prox_moveis:before{border-left-color:#fe2601;}
+.prox_moveis:hover:before{border-left-color:#FE5E41;}
 .prox_vert_moveis:before{border-top-color:#fe2601;}
+.prox_vert_moveis:hover:before{border-top-color:#FE5E41;}
 .infos_moveis .track { background-color: #D8EEFD; }
 .infos_moveis .thumb .end, .infos_moveis .thumb { background-color: #d4361b; }
 /************************************* MOVEIS *************************************/
 
 /************************************* VASOS *************************************/
-#content_vasos{height:451px; background:#d68d3f; border-bottom-right-radius:100px;}
+#content_vasos{height:387px; background:#d68d3f; border-bottom-right-radius:100px;}
+#content_vasos #order_texto{margin-top:84px;}
 .slider_vasos{width:285px; height:387px;}
 #content_vasos .icone_pagina{background-position:-105px -442px;}
 .menu_vasos{background:#c57b2b;}

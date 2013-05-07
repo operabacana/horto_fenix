@@ -14,7 +14,7 @@
                         Existe algum erro em seu formulário.
                     </div>
 
-    	        <?php }elseif( $this -> session -> flashdata('feedback') == 'success' ){ ?>
+    	        <?php }elseif( $this -> session -> flashdata('feedbackContact') == 'success' ){ ?>
 
     	            <div class="success">
                         <?php echo $this -> lang -> line('form_submit_contato_success');  ?>

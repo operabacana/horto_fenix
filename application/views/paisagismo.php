@@ -2,7 +2,7 @@
 
     <div class="slider slider_paisagismo">
 
-        <ul>
+        <ul class="interno">
 
             <li><img src="<?php echo site_url(); ?>imagens/paisagismo1.png" /></li>
             <li><img src="<?php echo site_url(); ?>imagens/paisagismo2.png" /></li>
@@ -21,7 +21,9 @@ A Fênix Móveis e Paisagismo busca aperfeiçoar a estética do jardim de seus c
 <br /><br />
 A utilização de elementos mais simples como vasos, grades e cercas e outros elementos mais específicos como o uso de esculturas, pedras coloridas, lagos e pequenas pontes são muito procurados para criar o cenário ideal.
 <br /><br />
-As reuniões para acompanhamento do projeto podem ainda ser feitas na lanchonete localizada dentro da Fênix Móveis e Paisagismo para que você possa apreciar um
+As reuniões para acompanhamento do projeto podem ainda ser feitas na lanchonete localizada dentro da Fênix Móveis e Paisagismo para que você possa apreciar um delicioso lanche.
+<br /><br />
+Esse serviço cobre toda a região serrana do Rio de Janeiro.
             </p>
 
          </div>
@@ -77,10 +79,10 @@ As reuniões para acompanhamento do projeto podem ainda ser feitas na lanchonete
                             <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
                                 <div class="viewport">
                                     <div class="overview">
-                                        <p><label class="label_infos_paisagismo">Projeto: </label> <?php echo $paisagismo->projeto; ?></p>
-                                        <p><label class="label_infos_paisagismo">Descrição: </label><?php echo $paisagismo->descricao; ?></p>
-                                        <p><label class="label_infos_paisagismo">Problema: </label><?php echo $paisagismo->problema; ?></p>
-                                        <p><label class="label_infos_paisagismo">Solução: </label><?php echo $paisagismo->solucao; ?></p>
+                                        <?php /* ?><p><label class="label_infos_paisagismo">Projeto: </label> <?php echo $paisagismo->projeto; ?></p><?php */ ?>
+                                        <?php /* ?><p><label class="label_infos_paisagismo">Descrição: </label><?php echo $paisagismo->descricao; ?></p><?php */ ?>
+                                        <?php /* ?><p><label class="label_infos_paisagismo">Problema: </label><?php echo $paisagismo->problema; ?></p> <?php */ ?>
+                                        <?php /* ?><p><label class="label_infos_paisagismo">Solução: </label><?php echo $paisagismo->solucao; ?></p> <?php */ ?>
                                     </div>
                                 </div>
                         </div>

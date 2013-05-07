@@ -17,7 +17,7 @@
             <?php }else{ ?>
 
                 <p class="texto_titulo">Cadastre-se</p>
-                <p class="texto_subtitulo">Recebas novidades e dicas em seu email.</p>
+                <p class="texto_subtitulo">Receba novidades e dicas em seu email.</p>
 
             <?php } ?>
 

@@ -2,7 +2,7 @@
 
     <div class="slider slider_quemsomos">
 
-        <ul>
+        <ul class="interno">
 
             <li><img src="<?php echo site_url(); ?>imagens/quemsomos1.png" /></li>
             <li><img src="<?php echo site_url(); ?>imagens/quemsomos2.png" /></li>

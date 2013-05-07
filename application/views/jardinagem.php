@@ -2,7 +2,7 @@
 
     <div class="slider slider_jardinagem">
 
-        <ul>
+        <ul class="interno">
 
             <li><img src="<?php echo site_url(); ?>imagens/jardinagem1.png" /></li>
             <li><img src="<?php echo site_url(); ?>imagens/jardinagem2.png" /></li>
@@ -76,10 +76,10 @@ Este serviço cobre toda a região serrana do Rio de Janeiro.
                             <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
                                 <div class="viewport">
                                     <div class="overview">
-                                        <p><label class="label_infos_paisagismo">Jardim: </label> <?php echo $jardinagem->jardim; ?></p>
-                                        <p><label class="label_infos_paisagismo">Descrição: </label><?php echo $jardinagem->descricao; ?></p>
-                                        <p><label class="label_infos_paisagismo">Problema: </label><?php echo $jardinagem->problema; ?></p>
-                                        <p><label class="label_infos_paisagismo">Solução: </label><?php echo $jardinagem->solucao; ?></p>
+                                        <?php /* ?><p><label class="label_infos_jardinagem">Jardim: </label> <?php echo $jardinagem->jardim; ?></p><?php */ ?>
+                                        <?php /* ?><p><label class="label_infos_jardinagem">Descrição: </label><?php echo $jardinagem->descricao; ?></p><?php */ ?>
+                                        <?php /* ?><p><label class="label_infos_jardinagem">Problema: </label><?php echo $jardinagem->problema; ?></p><?php */ ?>
+                                        <?php /* ?><p><label class="label_infos_jardinagem">Solução: </label><?php echo $jardinagem->solucao; ?></p><?php */ ?>
                                     </div>
                                 </div>
                         </div>

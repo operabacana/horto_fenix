@@ -51,21 +51,15 @@ class Ajax_listas extends CI_Controller{
 
         $listas = $sel_lista->result();
 
-        echo '<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
-                    <div class="viewport">
-                        <div class="overview">';
-
         foreach( $listas as $ind => $lista ){
 
             if( ($ind+1) % 2 == 0 ){ $class="par"; }else{ $class="impar"; }
 
             echo '
-                <p class="'.$class.'">'.$lista->nome.'</p>
+                <li class="'.$class.'">'.$lista->nome.'</li>
             ';
 
         }
-
-        echo '</div>  </div>';
 
     }
 

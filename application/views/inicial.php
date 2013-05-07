@@ -1,7 +1,6 @@
 <div role="main" class="container">
 
     <div class="slider">
-
         <ul>
             <li>
                 <a href="<?php echo site_url(); ?>paisagismo"><img src="<?php echo site_url(); ?>imagens/paisagismo.jpg" /></a>

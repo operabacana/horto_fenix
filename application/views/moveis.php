@@ -16,7 +16,7 @@
 
           <div class="slider slider_jardinagem">
 
-              <ul>
+              <ul class="interno">
 
                   <li><img src="<?php echo site_url(); ?>imagens/moveis1.png" /></li>
                   <li><img src="<?php echo site_url(); ?>imagens/moveis2.png" /></li>
@@ -73,10 +73,10 @@ Acrescente essa decoração especial à sua casa, afinal, móveis de madeira nun
                               <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
                                   <div class="viewport">
                                       <div class="overview">
-                                          <p><label class="label_infos_moveis">Produto: </label><?php echo $interno->produto; ?></p>
-                                          <p><label class="label_infos_moveis">Descrição: </label><?php echo $interno->descricao; ?></p>
-                                          <p><label class="label_infos_moveis">Problema: </label><?php echo $interno->problema; ?></p>
-                                          <p><label class="label_infos_moveis">Solução: </label><?php echo $interno->solucao; ?></p>
+                                          <?php /* ?><p><label class="label_infos_moveis">Produto: </label><?php echo $interno->produto; ?></p><?php */ ?>
+                                          <?php /* ?><p><label class="label_infos_moveis">Descrição: </label><?php echo $interno->descricao; ?></p><?php */ ?>
+                                          <?php /* ?><p><label class="label_infos_moveis">Problema: </label><?php echo $interno->problema; ?></p><?php */ ?>
+                                          <?php /* ?><p><label class="label_infos_moveis">Solução: </label><?php echo $interno->solucao; ?></p><?php */ ?>
                                       </div>
                                   </div>
                           </div>
@@ -140,10 +140,10 @@ Acrescente essa decoração especial à sua casa, afinal, móveis de madeira nun
                               <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
                                   <div class="viewport">
                                       <div class="overview">
-                                          <p><label class="label_infos_moveis">Produto: </label><?php echo $externo->produto; ?></p>
-                                          <p><label class="label_infos_moveis">Descrição: </label><?php echo $externo->descricao; ?></p>
-                                          <p><label class="label_infos_moveis">Problema: </label><?php echo $externo->problema; ?></p>
-                                          <p><label class="label_infos_moveis">Solução: </label><?php echo $externo->solucao; ?></p>
+                                          <?php /* ?><p><label class="label_infos_moveis">Produto: </label><?php echo $externo->produto; ?></p><?php */ ?>
+                                          <?php /* ?><p><label class="label_infos_moveis">Descrição: </label><?php echo $externo->descricao; ?></p><?php */ ?>
+                                          <?php /* ?><p><label class="label_infos_moveis">Problema: </label><?php echo $externo->problema; ?></p><?php */ ?>
+                                          <?php /* ?><p><label class="label_infos_moveis">Solução: </label><?php echo $externo->solucao; ?></p><?php */ ?>
                                       </div>
                                   </div>
                           </div>
